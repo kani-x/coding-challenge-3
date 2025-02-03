@@ -60,3 +60,21 @@ feedback.push({ customerName: "Emily Davis", feedbackText: "Very helpful support
 
 // Step 3: Log the entire feedback array
 console.log("Customer Feedback Records:", feedback);
+
+// Task 5 - Inventory Management System
+
+// Step 1: Declare the inventory object
+let inventory = {
+    itemName: "Wireless Headphones",
+    stockCount: 150,
+    price: 29.99,
+
+    // Step 2: Add a method to calculate total inventory value
+    calculateTotalValue: function () {
+        return this.stockCount * this.price;
+    }
+};
+
+// Step 3: Log inventory details and total value
+console.log("Inventory Details:", inventory);
+console.log("Total Inventory Value: $" + inventory.calculateTotalValue().toFixed(2));
